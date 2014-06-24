@@ -1,0 +1,7 @@
+
+body{ font-family: 'Open Sans', sans-serif; }
+footer{ position: absolute; bottom: 0; left: 0; right: 0; background-color: #666; color: #CCC; padding: 14px 0; }
+
+#main{ position: absolute; width: 100%; bottom: 48px; top: 53px; padding: 20px 0; overflow-y: auto; }
+
+.item{ background-color: #eee; color: #999; margin-bottom: 20px; border: 1px solid #ddd; padding: 20px 0; text-align: center; }
