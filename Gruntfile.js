@@ -8,7 +8,7 @@ module.exports = function(grunt) {
                 separator: '\n\n'
             },
             js: {
-                src: ['src/js/bootstrap.js', 'src/js/**/*.js'],
+                src: ['src/js/bootstrap.js', 'src/js/directives/app_list.js', 'src/js/**/*.js'],
                 dest: 'build/<%= pkg.name %>.js'
             },
             css: {

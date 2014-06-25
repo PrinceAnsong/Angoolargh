@@ -12,28 +12,18 @@
 <body data-ng-controller="AppCtrl">
 
     <script type="text/ng-template" id="pages/">
-        <div class="row" data-app-list="home" data-infinite-scroll="loadMore()" data-infinite-scroll-distance="3"
-             data-infinite-scroll-container="#main" data-infinite-scroll-parent>
-            <div data-ng-repeat="item in items" class="col-xs-3">
-                <div class="item" data-ng-bind="item"></div>
-            </div>
+        <div data-infinite-list="home">
+            <div data-app-filler="items" data-app-filler-btn-fn="loadMore()"></div>
         </div>
     </script>
     <script type="text/ng-template" id="pages/about">
-        <div class="row"  data-app-list="about" data-infinite-scroll="loadMore()" data-infinite-scroll-distance="3"
-             data-infinite-scroll-container="#main" data-infinite-scroll-parent>
-            <div data-ng-repeat="item in items" class="col-xs-3">
-                <div class="item" data-ng-bind="item"></div>
-            </div>
-        </div>
+        <div data-infinite-list="about">
+            <div data-app-filler="items" data-app-filler-btn-fn="loadMore()"></div>
         </div>
     </script>
     <script type="text/ng-template" id="pages/contact">
-        <div class="row"  data-app-list="contact" data-infinite-scroll="loadMore()" data-infinite-scroll-distance="3"
-             data-infinite-scroll-container="#main" data-infinite-scroll-parent>
-            <div data-ng-repeat="item in items" class="col-xs-3">
-                <div class="item" data-ng-bind="item"></div>
-            </div>
+        <div data-infinite-list="contact">
+            <div data-app-filler="items" data-app-filler-btn-fn="loadMore()"></div>
         </div>
     </script>
 
